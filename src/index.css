@@ -1,4 +1,6 @@
 body {
+
+  background-color:#2C73D2;
   font-family: sans-serif;
 }
 
@@ -14,8 +16,8 @@ body {
 .table__cell {
   flex-grow: 1;
   box-sizing: border-box;
-  margin: 1px;
-  background-color: #f5f5f5;
+  margin: 2px;
+  background-color: #0089BA;
   box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.38);
 }
 
@@ -26,22 +28,26 @@ body {
 }
 
 .game.end .joint {
-  background-color: black;
+  background-color: #18025B;
 }
 
 .joint {
-  background-color: #ccc;
+  background-color: #714DAF;
 }
 
 .fruit {
-  background-color: red;
+  background-color: #F9F871;
 }
 
 .description {
   margin-top: 1em;
+
 }
 
 .description .button {
   display: block;
   float: right;
+  background-color: #008F7A;
+  border : 0;
+  color : white;
 }
