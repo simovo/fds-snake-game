@@ -106,7 +106,8 @@ if (
   this.joints[0].x < 0 ||
   this.joints[0].y < 0
 ) {
-  
+let gameOver = confirm("어머~~이런 다시행~~");
+
 this.joints.pop();
 
   return false;
@@ -124,6 +125,8 @@ if(this.joints[0].x === this.fruit.x && this.joints[0].y ===  this.fruit.y ){
 
 for(let i  =  1; i < this.joints.length; i++){
 if(this.joints[0].x === this.joints[i].x && this.joints[0].y === this.joints[i].y) {
+
+ let gameOver = confirm('어머~~이런 다시행~~');
 
   return false
 }
