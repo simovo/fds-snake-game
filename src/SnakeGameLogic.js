@@ -108,7 +108,7 @@ if (
 ) {
 let gameOver = confirm("어머~~이런 다시행~~");
 
-this.joints.pop();
+this.joints.pop(); // FIXME: 게임이 끝날 것이므로 필요없는 코드입니다.
 
   return false;
 }
@@ -117,7 +117,8 @@ this.joints.pop();
 // 꼬리 늘어나가 하는 ,,,
 
 if(this.joints[0].x === this.fruit.x && this.joints[0].y ===  this.fruit.y ){
-  this.fruit.x = Math.ceil(Math.random() * COLS-1);
+  // FIXME: `Math.ceil` 대신 `Math.floor`를 쓸 수 있습니다.
+  this.fruit.x = Math.ceil(Math.random() * COLS-1); 
   this.fruit.y = Math.ceil(Math.random() * ROWS-1);
 } else {
     this.joints.pop();
